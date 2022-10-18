@@ -10,13 +10,19 @@
   <body>
     <div class="container">
       <div class="title">Etch-A-Sketch</div>
-      <div class="mode"></div>
+      <div class="mode">Drawing enabled</div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons">
-          <button onclick="changeColor('black')">Black</button>
-          <button onclick="changeColor('White')">Erasor</button>
-          <button onclick="changeColor('random')">Random</button>
+          <button class="blackButton" onclick="changeColor('black')">
+            Black
+          </button>
+          <button class="erasorButton" onclick="changeColor('White')">
+            Erasor
+          </button>
+          <button class="randomButton" onclick="changeColor('random')">
+            Random
+          </button>
           <input
             onclick="changeColor('picker')"
             type="color"
@@ -30,7 +36,8 @@
           value="16"
           onchange="changeSize(this.value)"
         />
-        <button>Set Size</button>
+        <button class="setSize">Set Size</button>
+        <div class="error">Input must be between 2 and 60!</div>
       </div>
     </div>
   </body>

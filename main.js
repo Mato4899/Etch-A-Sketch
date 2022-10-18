@@ -26,9 +26,10 @@ populateBoard(16);
 
 function changeSize(input) {
   if (input >= 2 && input <= 60) {
+    document.querySelector(".error").style.display = "none";
     populateBoard(input);
   } else {
-    console.log("cant");
+    document.querySelector(".error").style.display = "flex";
   }
 }
 
@@ -66,15 +67,3 @@ document.querySelector("body").addEventListener("click", (e) => {
     }
   }
 });
-
-// const chooseColor = document.querySelector(".colorChoice");
-// chooseColor.addEventListener("input", function () {
-//   let val = document.getElementById("slider").value;
-//   let newColor = document.querySelector(".colorChoice").value;
-//   let cell = grid.children;
-//   for (let i = 0; i < val * val; i++) {
-//     cell[i].addEventListener("mouseover", function (event) {
-//       event.target.style.backgroundColor = newColor;
-//     });
-//   }
-// });
