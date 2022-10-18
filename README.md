@@ -7,3 +7,4 @@ Etch a sketch game created with HTML, CSS and JS.
 * Rainbow pen colours each cell a random colour.
 * Create a grid size up to 60 x 60.
  
+[Live Demo](https://mato4899.github.io/Etch-A-Sketch/)
